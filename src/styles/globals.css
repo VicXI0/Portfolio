@@ -1,0 +1,324 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap");
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --font-size: 16px;
+  --font-family-main: "Inter", system-ui, sans-serif;
+  --font-family-mono: "JetBrains Mono", monospace;
+
+  /* Palette beige/marron/blanc */
+  --background: #faf8f5;
+  --foreground: #2d1810;
+  --card: #ffffff;
+  --card-foreground: #2d1810;
+  --primary: #6b4423;
+  --primary-foreground: #ffffff;
+  --secondary: #f0ede8;
+  --secondary-foreground: #2d1810;
+  --muted: #f5f2ee;
+  --muted-foreground: #8b6914;
+  --accent: #d4a574;
+  --accent-foreground: #2d1810;
+  --border: #e6ddd1;
+  --destructive: #dc2626;
+  --destructive-foreground: #ffffff;
+  --input: #f5f2ee;
+  --input-background: #ffffff;
+  --ring: #d4a574;
+
+  /* Couleurs personnalisées beige/marron */
+  --color-cream: #faf8f5;
+  --color-beige: #f0ede8;
+  --color-tan: #d4a574;
+  --color-brown: #6b4423;
+  --color-dark-brown: #2d1810;
+  --color-accent: #b8956a;
+
+  --radius: 8px;
+  --shadow-subtle: 0 1px 3px rgba(45, 24, 16, 0.1);
+  --shadow-medium: 0 4px 20px rgba(45, 24, 16, 0.08);
+  --shadow-strong: 0 10px 40px rgba(45, 24, 16, 0.12);
+}
+
+.dark {
+  --background: #1a1512;
+  --foreground: #faf8f5;
+  --card: #2d1810;
+  --card-foreground: #faf8f5;
+  --primary: #d4a574;
+  --primary-foreground: #2d1810;
+  --secondary: #2d2520;
+  --secondary-foreground: #faf8f5;
+  --muted: #2a221d;
+  --muted-foreground: #b8956a;
+  --border: #3d342c;
+  --input: #2d2520;
+  --input-background: #2d1810;
+  --ring: #d4a574;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-input: var(--input);
+  --color-input-background: var(--input-background);
+  --color-ring: var(--ring);
+  --color-cream: var(--color-cream);
+  --color-beige: var(--color-beige);
+  --color-tan: var(--color-tan);
+  --color-brown: var(--color-brown);
+  --color-dark-brown: var(--color-dark-brown);
+  --color-accent-custom: var(--color-accent);
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  html {
+    font-family: var(--font-family-main);
+    font-size: var(--font-size);
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: hidden;
+    line-height: 1.6;
+  }
+
+  /* Typography moderne et élégante */
+  h1 {
+    font-size: clamp(2.5rem, 6vw, 5rem);
+    font-weight: 700;
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+    font-family: var(--font-family-main);
+  }
+
+  h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  h3 {
+    font-size: clamp(1.5rem, 3vw, 2rem);
+    font-weight: 600;
+    line-height: 1.3;
+  }
+
+  h4 {
+    font-size: clamp(1.125rem, 2vw, 1.5rem);
+    font-weight: 500;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.7;
+  }
+
+  .text-large {
+    font-size: clamp(1.125rem, 2vw, 1.25rem);
+    line-height: 1.6;
+  }
+
+  .font-mono {
+    font-family: var(--font-family-mono);
+  }
+}
+
+/* Layout */
+.container-narrow {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.container-wide {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+.section-padding {
+  padding: clamp(3rem, 8vw, 8rem) 0;
+}
+
+/* Animations douces et professionnelles */
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fade-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes scale-in {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.6s ease-out forwards;
+}
+
+.animate-fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+.animate-scale-in {
+  animation: scale-in 0.5s ease-out forwards;
+}
+
+/* Couleurs personnalisées */
+.text-cream { color: var(--color-cream); }
+.text-beige { color: var(--color-beige); }
+.text-tan { color: var(--color-tan); }
+.text-brown { color: var(--color-brown); }
+.text-dark-brown { color: var(--color-dark-brown); }
+.text-accent-custom { color: var(--color-accent); }
+
+.bg-cream { background-color: var(--color-cream); }
+.bg-beige { background-color: var(--color-beige); }
+.bg-tan { background-color: var(--color-tan); }
+.bg-brown { background-color: var(--color-brown); }
+.bg-dark-brown { background-color: var(--color-dark-brown); }
+.bg-accent-custom { background-color: var(--color-accent); }
+
+.border-cream { border-color: var(--color-cream); }
+.border-beige { border-color: var(--color-beige); }
+.border-tan { border-color: var(--color-tan); }
+.border-brown { border-color: var(--color-brown); }
+
+/* Gradients beige/marron */
+.gradient-warm {
+  background: linear-gradient(135deg, var(--color-beige), var(--color-tan));
+}
+
+.gradient-earth {
+  background: linear-gradient(135deg, var(--color-tan), var(--color-brown));
+}
+
+.gradient-text-warm {
+  background: linear-gradient(135deg, var(--color-tan), var(--color-brown));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Effets hover subtils */
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-medium);
+}
+
+.hover-scale {
+  transition: transform 0.3s ease;
+}
+
+.hover-scale:hover {
+  transform: scale(1.02);
+}
+
+/* Formes */
+.rounded-soft {
+  border-radius: var(--radius);
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+/* Ombres */
+.shadow-soft {
+  box-shadow: var(--shadow-subtle);
+}
+
+.shadow-warm {
+  box-shadow: 0 4px 20px rgba(107, 68, 35, 0.1);
+}
+
+/* Utilitaires */
+.aspect-square { aspect-ratio: 1; }
+.aspect-portrait { aspect-ratio: 3/4; }
+.aspect-landscape { aspect-ratio: 4/3; }
+
+/* Transitions */
+.transition-all {
+  transition: all 0.3s ease;
+}
+
+.transition-colors {
+  transition: color 0.3s ease, background-color 0.3s ease, border-color 0.3s ease;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .container-wide,
+  .container-narrow {
+    padding: 0 1rem;
+  }
+  
+  .section-padding {
+    padding: clamp(2rem, 6vw, 4rem) 0;
+  }
+}
+
+/* Sélection personnalisée */
+::selection {
+  background: var(--color-tan);
+  color: var(--color-dark-brown);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-beige);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-brown);
+  border-radius: 2px;
+}
