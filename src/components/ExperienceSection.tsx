@@ -174,10 +174,7 @@ export function ExperienceSection() {
                   {timeline.map((item, index) => (
                     <div
                       key={index}
-                      className="relative animate-fade-in-up"
-                      style={{
-                        animationDelay: `${index * 0.2}s`,
-                      }}
+                      className={`relative animate-fade-in-up timeline-item-${index}`}
                     >
                       {/* Timeline dot */}
                       <div

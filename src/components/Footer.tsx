@@ -149,10 +149,10 @@ export function Footer() {
             {/* Copyright */}
             <div className="flex items-center space-x-2 text-cream/60">
               <span className="text-sm">
-                © {currentYear} [Votre Nom]. Créé avec
+                © {currentYear} PHANOR Myron. Créé avec
               </span>
               <Heart className="w-4 h-4 text-tan animate-pulse" />
-              <span className="text-sm">et beaucoup de café</span>
+              <span className="text-sm">et beaucoup d'admiration.</span>
               <Coffee className="w-4 h-4 text-tan" />
             </div>
 

@@ -9,7 +9,7 @@ export function SkillsSection() {
       icon: <Palette className="w-5 h-5" />,
       description: 'Mes compétences en design d\'interface utilisateur et création visuelle.',
       skills: [
-        { name: 'Figma', level: 85, description: 'Mon outil principal de design', color: 'bg-purple-500' },
+        { name: 'Figma', level: 65, description: 'Mon outil principal de design', color: 'bg-purple-500' },
         { name: 'Design Systems', level: 75, description: 'Création de systèmes cohérents', color: 'bg-blue-500' },
         { name: 'Prototypage', level: 80, description: 'Maquettes interactives', color: 'bg-green-500' },
         { name: 'Typographie', level: 70, description: 'Hiérarchie et lisibilité', color: 'bg-orange-500' },
@@ -34,7 +34,6 @@ export function SkillsSection() {
       description: 'Mes outils de design et compétences techniques complémentaires.',
       skills: [
         { name: 'Figma Advanced', level: 90, description: 'Composants, variants, auto-layout', color: 'bg-purple-600' },
-        { name: 'Adobe Creative', level: 65, description: 'Photoshop, Illustrator, XD', color: 'bg-blue-600' },
         { name: 'Principle', level: 70, description: 'Animation et micro-interactions', color: 'bg-green-600' },
         { name: 'Miro/FigJam', level: 75, description: 'Collaboration et idéation', color: 'bg-orange-600' },
         { name: 'HTML/CSS', level: 80, description: 'Compréhension technique', color: 'bg-indigo-600' },
