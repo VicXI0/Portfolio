@@ -33,11 +33,10 @@ export function SkillsSection() {
       icon: <Monitor className="w-5 h-5" />,
       description: 'Mes outils de design et compétences techniques complémentaires.',
       skills: [
-        { name: 'Figma Advanced', level: 90, description: 'Composants, variants, auto-layout', color: 'bg-purple-600' },
-        { name: 'Principle', level: 70, description: 'Animation et micro-interactions', color: 'bg-green-600' },
+        { name: 'Figma Advanced', level: 70, description: 'Composants, variants, auto-layout', color: 'bg-purple-600' },
+        { name: 'Canva', level: 70, description: 'Application de design graphique et de création de logos', color: 'bg-green-600' },
         { name: 'Miro/FigJam', level: 75, description: 'Collaboration et idéation', color: 'bg-orange-600' },
         { name: 'HTML/CSS', level: 80, description: 'Compréhension technique', color: 'bg-indigo-600' },
-        { name: 'Design Tokens', level: 65, description: 'Variables et système', color: 'bg-pink-600' }
       ]
     },
     'Soft Skills': {

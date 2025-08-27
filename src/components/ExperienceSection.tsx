@@ -328,8 +328,7 @@ export function ExperienceSection() {
                         </div>
                         <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
                           <div
-                            className="h-2 rounded-full bg-gradient-to-r from-primary to-accent transition-all duration-1000 ease-out"
-                            style={{ width: `${skill.level}%` }}
+                            className={`h-2 rounded-full bg-gradient-to-r from-primary to-accent transition-all duration-1000 ease-out w-[${skill.level}%]`}
                           ></div>
                         </div>
                       </div>
