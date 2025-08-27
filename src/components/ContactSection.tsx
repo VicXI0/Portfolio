@@ -49,21 +49,21 @@ export function ContactSection() {
     {
       icon: Mail,
       label: 'Email',
-      value: 'votre.email@designer.com',
-      href: 'mailto:votre.email@designer.com',
+      value: 'phanormyron.pro@gmail.com',
+      href: 'mailto:phanormyron.pro@gmail.com',
       description: 'Pour vos projets design'
     },
     {
       icon: Phone,
       label: 'Téléphone',
-      value: '+33 X XX XX XX XX',
-      href: 'tel:+33XXXXXXXXX',
-      description: 'Disponible de 9h à 18h'
+      value: '+33 6 50 35 19 94',
+      href: 'tel:+33650351994',
+      description: 'Disponible à tout moment'
     },
     {
       icon: MapPin,
       label: 'Localisation',
-      value: '[Votre ville], France',
+      value: 'Paris, France',
       href: '#',
       description: 'Remote & sur site'
     }
@@ -73,23 +73,16 @@ export function ContactSection() {
     {
       icon: ExternalLink,
       label: 'Behance',
-      href: '#',
+      href: 'https://www.behance.net/myron-phanor',
       description: 'Mon portfolio design',
       color: 'hover:bg-purple-600 hover:text-white'
     },
     {
       icon: Linkedin,
       label: 'LinkedIn',
-      href: '#',
+      href: 'https://www.linkedin.com/in/myron-phanor-75b183282',
       description: 'Mon profil professionnel',
       color: 'hover:bg-blue-600 hover:text-white'
-    },
-    {
-      icon: Palette,
-      label: 'Dribbble',
-      href: '#',
-      description: 'Mes créations quotidiennes',
-      color: 'hover:bg-pink-600 hover:text-white'
     }
   ];
 
@@ -124,8 +117,8 @@ export function ContactSection() {
                   <MessageCircle className="w-5 h-5 text-white" />
                 </div>
                 <div>
-                  <h3 className="text-brown">Parlez-moi de votre projet</h3>
-                  <p className="text-sm text-muted-foreground">Je vous répondrai sous 24h</p>
+                  <h3 className="text-brown">Si la moindre question vous vient à l'esprit ?</h3>
+                  <p className="text-sm text-muted-foreground">Je vous répondrai sous 24h !</p>
                 </div>
               </div>
 

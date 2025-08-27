@@ -19,19 +19,19 @@ export function Footer() {
   const socialLinks = [
     {
       icon: Github,
-      href: '#',
+      href: 'https://github.com/VicXI0',
       label: 'GitHub',
       description: 'Mes projets'
     },
     {
       icon: Linkedin,
-      href: '#',
+      href: 'https://www.linkedin.com/in/myron-phanor-75b183282',
       label: 'LinkedIn',
       description: 'Mon profil'
     },
     {
       icon: ExternalLink,
-      href: '#',
+      href: 'https://www.behance.net/myron-phanor',
       label: 'Behance',
       description: 'Mes designs'
     }
@@ -96,7 +96,7 @@ export function Footer() {
               >
                 <Mail className="w-4 h-4" />
                 <span className="group-hover:translate-x-1 transition-transform">
-                  votre.email@designer.com
+                 phanormyron.pro@gmail.com
                 </span>
               </a>
             </div>

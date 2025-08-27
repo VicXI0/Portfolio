@@ -69,10 +69,8 @@ export function AboutSection() {
               <h3 className="text-brown">Ma transition vers le design</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Tout a commencé avec mon BTS SIO option SLAM. Pendant que j'apprenais 
-                  les bases du développement - HTML, CSS, JavaScript, PHP - j'ai découvert 
-                  quelque chose d'inattendu : ma fascination pour l'aspect visuel et 
-                  l'expérience utilisateur des applications que je créais.
+                  Actuellement en BTS SIO Option SLAM, je voulais être Développeur Web Full-Stack, mais lorsque j'ai eu l'occasion de créer des projets de sites web, j'ai plus pensé comme un Designer UI / UX au lieu d'un Développeur.
+                  Je faisais attention aux détails, à l'expérience utilisateur et à l'esthétique globale, ce qui m'a fait réaliser que ma véritable passion résidait dans le design.
                 </p>
                 <p>
                   Ce qui devait être un parcours purement technique s'est transformé en 
@@ -183,29 +181,20 @@ export function AboutSection() {
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-muted-foreground">Localisation</span>
-                  <span className="text-sm font-medium text-brown">[Votre ville], France</span>
+                  <span className="text-sm font-medium text-brown">Paris, France</span>
                 </div>
                 <div className="flex justify-between items-center">
                   <span className="text-sm text-muted-foreground">Disponibilité</span>
-                  <span className="text-sm font-medium text-green-600">Freelance/Stage</span>
+                  <span className="text-sm font-medium text-green-600">Alternance/Stage</span>
                 </div>
               </div>
-            </div>
-
-            {/* Ma vision */}
-            <div className="bg-gradient-warm p-6 rounded-soft text-center">
-              <div className="text-3xl mb-3">🎯</div>
-              <blockquote className="text-brown font-medium mb-2">
-                "Le bon design est invisible, il résout les problèmes sans que l'utilisateur s'en rende compte"
-              </blockquote>
-              <cite className="text-sm text-brown/70">Ma philosophie design</cite>
             </div>
 
             {/* Outils favoris */}
             <div className="bg-card p-6 rounded-soft border border-border shadow-soft">
               <h4 className="text-brown mb-4">Mes outils</h4>
               <div className="grid grid-cols-2 gap-3">
-                {['Figma', 'Adobe XD', 'Sketch', 'Principle', 'Miro', 'Notion'].map((tool) => (
+                {['Figma', 'Webflow', 'Canva', 'Cavalry', 'Notion'].map((tool) => (
                   <div key={tool} className="text-center p-2 bg-beige rounded text-sm font-medium text-brown">
                     {tool}
                   </div>

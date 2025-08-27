@@ -73,8 +73,8 @@ export function ExperienceSection() {
     {
       type: "education",
       title: "BTS SIO - Option SLAM",
-      company: "Lycée La Martinière Duchère",
-      location: "Lyon, France",
+      company: "Lycée Parc de Vilgénis",
+      location: "Massy, France",
       period: "2023 - 2025",
       duration: "2 ans",
       description:
@@ -100,9 +100,9 @@ export function ExperienceSection() {
     },
     {
       type: "education",
-      title: "Baccalauréat Scientifique - Spé. NSI",
-      company: "Lycée Édouard Branly",
-      location: "Lyon, France",
+      title: "Baccalauréat Professionnel SN - Option RISC",
+      company: "Lycée Georges Brassens",
+      location: "Evry - Courcouronnes, France",
       period: "2020 - 2023",
       duration: "3 ans",
       description:
