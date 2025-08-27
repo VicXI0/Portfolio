@@ -1,7 +1,7 @@
 
-  # Portfolio BTS SIO SLAM
+  # Portfolio 
 
-  Ceci est le portfolio crée par PHANOR Myron via Figma
+  Ceci est le portfolio crée par PHANOR Myron
 
   ## Running the code
 
