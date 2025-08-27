@@ -37,7 +37,7 @@ export function Header() {
             href="#accueil" 
             className="text-xl font-semibold text-brown hover:text-tan transition-colors"
           >
-            <span className="font-mono">{'<'}alexis.dev{'/>'}</span>
+            <span className="font-mono">{'<'}PHANORMyron{'/>'}</span>
           </a>
 
           {/* Navigation desktop */}

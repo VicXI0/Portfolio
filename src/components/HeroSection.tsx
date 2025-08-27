@@ -7,7 +7,7 @@ export function HeroSection() {
   
   const texts = [
     "Développeur Web",
-    "En reconversion dans l'UX Design",
+    "En reconversion",
     "Créateur d'expériences",
     "Designer passionné"
   ];
@@ -40,7 +40,7 @@ export function HeroSection() {
                   Salut, je suis
                 </p>
                 <h1 className="text-brown">
-                  PHAN?OR Myron
+                  PHANOR Myron
                 </h1>
               </div>
               
@@ -77,7 +77,7 @@ export function HeroSection() {
 
             {/* Tags compétences */}
             <div className="flex flex-wrap gap-2">
-              {['UI Design', 'UX Research', 'Prototypage', 'Figma', 'User Testing'].map((skill) => (
+              {['UI Design', 'UX Research', 'Prototypage', 'Figma'].map((skill) => (
                 <span 
                   key={skill}
                   className="px-3 py-1 bg-secondary text-sm text-brown rounded-full hover:bg-tan hover:text-white transition-colors"
@@ -94,7 +94,7 @@ export function HeroSection() {
                 className="bg-brown hover:bg-tan text-white px-8 hover-lift"
                 onClick={() => document.getElementById('projets')?.scrollIntoView({ behavior: 'smooth' })}
               >
-                Voir mes designs
+                Découvrir mes projets
                 <ArrowDown className="ml-2 w-4 h-4" />
               </Button>
               
@@ -104,7 +104,7 @@ export function HeroSection() {
                 className="border-brown text-brown hover:bg-brown hover:text-white px-8"
               >
                 <Download className="mr-2 w-4 h-4" />
-                Mon portfolio
+                Mon CV
               </Button>
             </div>
 
@@ -161,7 +161,7 @@ export function HeroSection() {
               {/* Cartes flottantes */}
               <div className="absolute -bottom-6 -right-6 bg-card border border-border p-4 rounded-soft shadow-medium hover-lift">
                 <div className="text-center">
-                  <div className="text-2xl mb-2">🎨</div>
+                  <div className="text-2xl mb-2"></div>
                   <div className="text-sm font-medium text-brown">UI/UX</div>
                   <div className="text-xs text-muted-foreground">Designer</div>
                 </div>
@@ -169,7 +169,7 @@ export function HeroSection() {
 
               <div className="absolute -top-6 -left-6 bg-card border border-border p-4 rounded-soft shadow-medium hover-lift">
                 <div className="text-center">
-                  <div className="text-2xl mb-2">🚀</div>
+                  <div className="text-2xl mb-2"></div>
                   <div className="text-sm font-medium text-brown">Transition</div>
                   <div className="text-xs text-muted-foreground">Carrière</div>
                 </div>

@@ -34,7 +34,7 @@ export function SkillsSection() {
       description: 'Mes outils de design et compétences techniques complémentaires.',
       skills: [
         { name: 'Figma Advanced', level: 70, description: 'Composants, variants, auto-layout', color: 'bg-purple-600' },
-        { name: 'Canva', level: 70, description: 'Application de design graphique et de création de logos', color: 'bg-green-600' },
+        { name: 'Canva', level: 40, description: 'Application de design graphique et de création de logos', color: 'bg-green-600' },
         { name: 'Miro/FigJam', level: 75, description: 'Collaboration et idéation', color: 'bg-orange-600' },
         { name: 'HTML/CSS', level: 80, description: 'Compréhension technique', color: 'bg-indigo-600' },
       ]
@@ -188,17 +188,17 @@ export function SkillsSection() {
             {/* Certifications et formations récentes */}
             <div className="grid md:grid-cols-3 gap-4">
               <div className="bg-card p-4 rounded-soft border border-border">
-                <div className="text-lg mb-2">📚</div>
-                <h5 className="font-medium text-brown mb-1">Google UX Design</h5>
-                <p className="text-xs text-muted-foreground">Certificat en cours</p>
+                <div className="text-lg mb-2"></div>
+                <h5 className="font-medium text-brown mb-1">Certification ANSSI</h5>
+                <p className="text-xs text-muted-foreground">Certificat Obtenue</p>
               </div>
               <div className="bg-card p-4 rounded-soft border border-border">
-                <div className="text-lg mb-2">🎓</div>
+                <div className="text-lg mb-2"></div>
                 <h5 className="font-medium text-brown mb-1">Figma Advanced</h5>
                 <p className="text-xs text-muted-foreground">Maîtrise complète</p>
               </div>
               <div className="bg-card p-4 rounded-soft border border-border">
-                <div className="text-lg mb-2">🏆</div>
+                <div className="text-lg mb-2"></div>
                 <h5 className="font-medium text-brown mb-1">Design Thinking</h5>
                 <p className="text-xs text-muted-foreground">Méthodologie appliquée</p>
               </div>
