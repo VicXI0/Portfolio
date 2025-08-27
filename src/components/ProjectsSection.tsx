@@ -18,7 +18,6 @@ import {
   Heart,
   Zap,
 } from "lucide-react";
-import { ImageWithFallback } from "./figma/ImageWithFallback";
 
 export function ProjectsSection() {
   const [activeFilter, setActiveFilter] = useState("all");

@@ -6,8 +6,8 @@ export function HeroSection() {
   const [currentText, setCurrentText] = useState(0);
   
   const texts = [
-    "UI/UX Designer",
-    "En reconversion",
+    "Développeur Web",
+    "En reconversion dans l'UX Design",
     "Créateur d'expériences",
     "Designer passionné"
   ];
@@ -40,7 +40,7 @@ export function HeroSection() {
                   Salut, je suis
                 </p>
                 <h1 className="text-brown">
-                  [Votre Nom]
+                  PHAN?OR Myron
                 </h1>
               </div>
               
