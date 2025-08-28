@@ -57,7 +57,7 @@ export function Header() {
           {/* Réseaux sociaux */}
           <div className="hidden md:flex items-center space-x-3">
             <a
-              href="https://github.com"
+              href="https://github.com/VicXI0"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-secondary hover:bg-tan hover:text-white flex items-center justify-center transition-all duration-300 hover-lift"
@@ -66,7 +66,7 @@ export function Header() {
               <Github className="w-4 h-4" />
             </a>
             <a
-              href="https://linkedin.com"
+              href="https://www.linkedin.com/in/myron-phanor-75b183282"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-secondary hover:bg-tan hover:text-white flex items-center justify-center transition-all duration-300 hover-lift"
@@ -75,7 +75,7 @@ export function Header() {
               <Linkedin className="w-4 h-4" />
             </a>
             <a
-              href="https://behance.net"
+              href="https://www.behance.net/myron-phanor/"
               target="_blank"
               rel="noopener noreferrer"
               className="w-9 h-9 rounded-full bg-secondary hover:bg-tan hover:text-white flex items-center justify-center transition-all duration-300 hover-lift"

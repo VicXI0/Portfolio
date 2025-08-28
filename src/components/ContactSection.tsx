@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Button } from './ui/button';
 import { Input } from './ui/input';
 import { Textarea } from './ui/textarea';
@@ -13,7 +14,9 @@ import {
   Coffee,
   MessageCircle,
   Palette,
-  Users
+  Users,
+  CheckCircle,
+  AlertCircle
 } from 'lucide-react';
 
 export function ContactSection() {
@@ -25,17 +28,58 @@ export function ContactSection() {
     projectType: ''
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
+
+  // Configuration EmailJS avec vos identifiants
+  const EMAILJS_SERVICE_ID = 'service_jkydr4y'; // Votre service Gmail
+  const EMAILJS_TEMPLATE_ID = 'template_d06n96q'; // Votre template Contact Us
+  const EMAILJS_PUBLIC_KEY = 'cp92lLDgKLwvPSU39'; // Votre clé publique
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
+    setSubmitStatus('idle');
     
-    // Simulation d'envoi
-    await new Promise(resolve => setTimeout(resolve, 2000));
-    
-    alert('Message envoyé ! J\'ai hâte de découvrir votre projet 🎨');
-    setFormData({ name: '', email: '', subject: '', message: '', projectType: '' });
-    setIsSubmitting(false);
+    try {
+      // Paramètres du template EmailJS
+      const templateParams = {
+        from_name: formData.name,
+        from_email: formData.email,
+        subject: formData.subject,
+        project_type: formData.projectType,
+        message: formData.message,
+        to_name: 'Myron', // Votre nom
+      };
+
+      // Envoi de l'email via EmailJS
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        templateParams,
+        EMAILJS_PUBLIC_KEY
+      );
+
+      setSubmitStatus('success');
+      setFormData({ 
+        name: '', 
+        email: '', 
+        subject: '', 
+        message: '', 
+        projectType: '' 
+      });
+      
+      // Reset du statut après 5 secondes
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+
+    } catch (error) {
+      console.error('Erreur lors de l\'envoi:', error);
+      setSubmitStatus('error');
+      
+      // Reset du statut après 5 secondes
+      setTimeout(() => setSubmitStatus('idle'), 5000);
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -96,6 +140,56 @@ export function ContactSection() {
     'Autre projet'
   ];
 
+  const getSubmitButtonContent = () => {
+    if (isSubmitting) {
+      return (
+        <>
+          <div className="w-4 h-4 mr-3 border-2 border-white border-t-transparent rounded-full animate-spin" />
+          Envoi en cours...
+        </>
+      );
+    }
+    
+    if (submitStatus === 'success') {
+      return (
+        <>
+          <CheckCircle className="mr-2 w-4 h-4" />
+          Message envoyé !
+        </>
+      );
+    }
+    
+    if (submitStatus === 'error') {
+      return (
+        <>
+          <AlertCircle className="mr-2 w-4 h-4" />
+          Réessayer
+        </>
+      );
+    }
+    
+    return (
+      <>
+        <Send className="mr-2 w-4 h-4" />
+        Envoyer ma demande
+      </>
+    );
+  };
+
+  const getButtonClassName = () => {
+    let baseClass = "w-full text-white hover-lift transition-all duration-300";
+    
+    if (submitStatus === 'success') {
+      return `${baseClass} bg-green-600 hover:bg-green-700`;
+    }
+    
+    if (submitStatus === 'error') {
+      return `${baseClass} bg-red-600 hover:bg-red-700`;
+    }
+    
+    return `${baseClass} bg-brown hover:bg-tan`;
+  };
+
   return (
     <section id="contact" className="section-padding">
       <div className="container-wide">
@@ -122,6 +216,29 @@ export function ContactSection() {
                 </div>
               </div>
 
+              {/* Message de statut */}
+              {submitStatus === 'success' && (
+                <div className="mb-6 p-4 bg-green-50 border border-green-200 rounded-soft">
+                  <div className="flex items-center space-x-2">
+                    <CheckCircle className="w-5 h-5 text-green-600" />
+                    <p className="text-green-800 font-medium">
+                      Message envoyé avec succès ! Je vous répondrai très bientôt 🎨
+                    </p>
+                  </div>
+                </div>
+              )}
+
+              {submitStatus === 'error' && (
+                <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-soft">
+                  <div className="flex items-center space-x-2">
+                    <AlertCircle className="w-5 h-5 text-red-600" />
+                    <p className="text-red-800 font-medium">
+                      Une erreur s'est produite. Veuillez réessayer ou me contacter directement.
+                    </p>
+                  </div>
+                </div>
+              )}
+
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -136,6 +253,7 @@ export function ContactSection() {
                       required
                       placeholder="Votre nom"
                       className="focus:border-tan focus:ring-tan/20"
+                      disabled={isSubmitting}
                     />
                   </div>
                   <div>
@@ -151,6 +269,7 @@ export function ContactSection() {
                       required
                       placeholder="votre@email.com"
                       className="focus:border-tan focus:ring-tan/20"
+                      disabled={isSubmitting}
                     />
                   </div>
                 </div>
@@ -165,7 +284,8 @@ export function ContactSection() {
                     value={formData.projectType}
                     onChange={handleChange}
                     required
-                    className="w-full px-3 py-2 border border-border rounded-soft focus:border-tan focus:ring-tan/20 bg-input-background"
+                    disabled={isSubmitting}
+                    className="w-full px-3 py-2 border border-border rounded-soft focus:border-tan focus:ring-tan/20 bg-input-background disabled:opacity-50"
                   >
                     <option value="">Sélectionnez un type de projet</option>
                     {projectTypes.map((type) => (
@@ -186,6 +306,7 @@ export function ContactSection() {
                     required
                     placeholder="Le titre de votre projet"
                     className="focus:border-tan focus:ring-tan/20"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -202,6 +323,7 @@ export function ContactSection() {
                     rows={6}
                     placeholder="Décrivez votre projet : contexte, objectifs, timeline, budget approximatif..."
                     className="focus:border-tan focus:ring-tan/20 resize-none"
+                    disabled={isSubmitting}
                   />
                 </div>
 
@@ -209,19 +331,9 @@ export function ContactSection() {
                   type="submit"
                   size="lg"
                   disabled={isSubmitting}
-                  className="w-full bg-brown hover:bg-tan text-white hover-lift"
+                  className={getButtonClassName()}
                 >
-                  {isSubmitting ? (
-                    <>
-                      <div className="w-4 h-4 mr-3 border-2 border-white border-t-transparent rounded-full animate-spin" />
-                      Envoi en cours...
-                    </>
-                  ) : (
-                    <>
-                      <Send className="mr-2 w-4 h-4" />
-                      Envoyer ma demande
-                    </>
-                  )}
+                  {getSubmitButtonContent()}
                 </Button>
               </form>
             </div>
@@ -311,7 +423,7 @@ export function ContactSection() {
               </p>
               <div className="flex items-center justify-center space-x-2 text-brown/70">
                 <Coffee className="w-4 h-4" />
-                <span className="text-xs font-mono">Toujours partant pour un café design ☕</span>
+                <span className="text-xs font-mono">Toujours partant pour donner un tout nouveau souffle !</span>
               </div>
             </div>
 
