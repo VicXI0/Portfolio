@@ -27,7 +27,7 @@ export function Footer() {
       icon: Linkedin,
       href: 'https://www.linkedin.com/in/myron-phanor-75b183282',
       label: 'LinkedIn',
-      description: 'Mon profil'
+      description: 'Mon profil LinkedIn'
     },
     {
       icon: ExternalLink,
@@ -62,20 +62,18 @@ export function Footer() {
           <div className="lg:col-span-5 space-y-6">
             <div>
               <h3 className="text-cream text-2xl mb-3 font-semibold">
-                UI/UX Designer
+                PHANOR Myron
               </h3>
               <p className="text-cream/80 leading-relaxed max-w-md">
-                Designer UI/UX passionné par la création d'expériences digitales 
-                exceptionnelles. En transition du développement vers le design 
-                pour allier technique et créativité.
+              Etudiant en BTS SIO option SLAM, je me passionne pour le design UI/UX. Je crée des interfaces intuitives et esthétiques qui améliorent l'expérience utilisateur. Mon objectif est de fusionner technologie et design pour des solutions innovantes.
               </p>
             </div>
 
             {/* Stats */}
             <div className="grid grid-cols-3 gap-4">
               <div className="text-center">
-                <div className="text-2xl font-bold text-tan">6+</div>
-                <div className="text-xs text-cream/60 font-mono">Projets Design</div>
+                <div className="text-2xl font-bold text-tan">3</div>
+                <div className="text-xs text-cream/60 font-mono">Projets</div>
               </div>
               <div className="text-center">
                 <div className="text-2xl font-bold text-tan">100%</div>
@@ -91,7 +89,7 @@ export function Footer() {
             <div className="space-y-3">
               <h4 className="text-cream font-medium">Contact rapide</h4>
               <a 
-                href="mailto:votre.email@designer.com"
+                href="mailto:phanormyron.pro@gmail.com"
                 className="flex items-center space-x-3 text-cream/80 hover:text-tan transition-colors group"
               >
                 <Mail className="w-4 h-4" />
@@ -153,14 +151,13 @@ export function Footer() {
               </span>
               <Heart className="w-4 h-4 text-tan animate-pulse" />
               <span className="text-sm">et beaucoup d'admiration.</span>
-              <Coffee className="w-4 h-4 text-tan" />
             </div>
 
             {/* Statut */}
             <div className="flex items-center space-x-2 bg-cream/5 px-4 py-2 rounded-full">
               <div className="w-2 h-2 bg-green-400 rounded-full animate-pulse" />
               <span className="text-sm text-cream/80 font-mono">
-                Disponible pour projets design
+                Disponible pour un stage ou une Alternance.
               </span>
             </div>
           </div>
@@ -168,7 +165,6 @@ export function Footer() {
           {/* Message inspirant */}
           <div className="text-center mt-6 pt-6 border-t border-cream/5">
             <p className="text-xs text-cream/40 font-mono italic">
-              "Le design, c'est rendre l'invisible visible et le complexe simple"
             </p>
           </div>
         </div>

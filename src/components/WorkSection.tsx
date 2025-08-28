@@ -10,9 +10,9 @@ export function WorkSection() {
   const projects = [
     {
       id: 1,
-      title: 'App Mobile E-commerce',
-      description: 'Design complet d\'une application mobile de vente en ligne avec focus sur l\'expérience d\'achat.',
-      category: 'Mobile App',
+      title: 'Antrophia - Gestion de RH',
+      description: 'Design complet d\'une application mobile de gestion des ressources humaines avec un focus sur l\'expérience utilisateur.',
+      category: 'Projet d\'école',
       tags: ['UI Design', 'Mobile First', 'E-commerce'],
       gradient: 'bg-gradient-to-br from-blue-400 to-blue-600',
       icon: '📱',
@@ -50,48 +50,6 @@ export function WorkSection() {
       year: '2024',
       type: 'Projet d\'école'
     },
-    {
-      id: 4,
-      title: 'Site Web Portfolio',
-      description: 'Design et prototypage d\'un site portfolio pour un photographe avec galerie interactive.',
-      category: 'Web Design',
-      tags: ['Portfolio', 'Créatif', 'Responsive'],
-      gradient: 'bg-gradient-to-br from-orange-400 to-orange-600',
-      icon: '📸',
-      behance: '#',
-      figma: '#',
-      status: 'Terminé',
-      year: '2024',
-      type: 'Freelance'
-    },
-    {
-      id: 5,
-      title: 'Design System',
-      description: 'Création d\'un design system complet avec composants, couleurs et guidelines pour startup.',
-      category: 'UI Design',
-      tags: ['Design System', 'Components', 'Guidelines'],
-      gradient: 'bg-gradient-to-br from-pink-400 to-pink-600',
-      icon: '🎨',
-      behance: '#',
-      figma: '#',
-      status: 'Terminé',
-      year: '2024',
-      type: 'Projet personnel'
-    },
-    {
-      id: 6,
-      title: 'App de Méditation',
-      description: 'Interface mobile zen et apaisante pour une application de méditation guidée.',
-      category: 'Mobile App',
-      tags: ['Wellness', 'Minimalist', 'Mobile'],
-      gradient: 'bg-gradient-to-br from-indigo-400 to-indigo-600',
-      icon: '🧘',
-      behance: '#',
-      figma: '#',
-      status: 'En cours',
-      year: '2024',
-      type: 'Étude de cas'
-    }
   ];
 
   const filteredProjects = activeCategory === 'Tous' 
@@ -125,8 +83,6 @@ export function WorkSection() {
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-brown mb-6">Mes Projets Design</h2>
           <p className="text-large text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Découvrez mes créations UI/UX, des études de cas aux projets concrets. 
-            Chaque design raconte une histoire et résout un problème utilisateur.
           </p>
         </div>
 

@@ -116,9 +116,9 @@ export function HeroSection() {
               <div className="w-8 h-px bg-border" />
               <div className="flex items-center space-x-3">
                 {[
-                  { icon: ExternalLink, href: '#', label: 'Behance' },
-                  { icon: Linkedin, href: '#', label: 'LinkedIn' },
-                  { icon: Github, href: '#', label: 'GitHub' },
+                  { icon: ExternalLink, href: 'https://www.behance.net/myron-phanor/', label: 'Behance' },
+                  { icon: Linkedin, href: 'https://www.linkedin.com/in/myron-phanor-75b183282', label: 'LinkedIn' },
+                  { icon: Github, href: 'https://github.com/VicXI0', label: 'GitHub' },
                 ].map((social) => (
                   <a
                     key={social.label}
@@ -144,7 +144,7 @@ export function HeroSection() {
                   <div className="absolute inset-0 flex items-center justify-center">
                     <div className="w-32 h-32 bg-brown/20 rounded-full flex items-center justify-center">
                       <div className="w-16 h-16 bg-tan rounded-full flex items-center justify-center">
-                        <div className="text-4xl">🎨</div>
+                        <div className="text-4xl"></div>
                       </div>
                     </div>
                   </div>

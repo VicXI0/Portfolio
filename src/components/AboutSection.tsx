@@ -4,22 +4,22 @@ import { ArrowRight, Download, MapPin, Calendar, Palette, Code } from 'lucide-re
 export function AboutSection() {
   const values = [
     {
-      icon: '🎨',
+      icon: '',
       title: 'Créativité technique',
       description: 'J\'allie ma compréhension du développement à ma passion naissante pour le design.'
     },
     {
-      icon: '👥',
+      icon: '',
       title: 'Centré utilisateur',
       description: 'Chaque design part d\'un besoin réel et vise à améliorer l\'expérience utilisateur.'
     },
     {
-      icon: '🔄',
+      icon: '',
       title: 'Approche itérative',
       description: 'J\'améliore constamment mes créations grâce aux retours et aux tests utilisateur.'
     },
     {
-      icon: '💡',
+      icon: '',
       title: 'Curiosité constante',
       description: 'Je me forme continuellement aux dernières tendances et outils du design.'
     }
@@ -28,8 +28,8 @@ export function AboutSection() {
   const journey = [
     {
       period: '2024-2026',
-      title: 'BTS SIO SLAM',
-      description: 'Formation technique qui m\'a donné les bases du développement',
+      title: 'BTS SIO Option SLAM',
+      description: 'Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2. L’option SLAM (Solutions Logicielles et Applications Métiers) est orientée vers le développement d’applications web, mobile et desktop, ainsi que la gestion de bases de données. Il permet d’acquérir une solide base en programmation et en conception de solutions logicielles. ',
       icon: Code,
       color: 'bg-blue-100 text-blue-600'
     },
