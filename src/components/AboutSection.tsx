@@ -1,5 +1,5 @@
 import { Button } from './ui/button';
-import { ArrowRight, Download, MapPin, Calendar, Palette, Code } from 'lucide-react';
+import { ArrowRight, Download, MapPin, Calendar, Palette, Code, GraduationCap } from 'lucide-react';
 
 export function AboutSection() {
   const values = [
@@ -27,24 +27,23 @@ export function AboutSection() {
 
   const journey = [
     {
-      period: '2024-2026',
+      period: '2024-Aujourd\'hui',
       title: 'BTS SIO Option SLAM',
       description: 'Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2. L’option SLAM (Solutions Logicielles et Applications Métiers) est orientée vers le développement d’applications web, mobile et desktop, ainsi que la gestion de bases de données. Il permet d’acquérir une solide base en programmation et en conception de solutions logicielles. ',
       icon: Code,
       color: 'bg-blue-100 text-blue-600'
     },
     {
-      period: '2024',
-      title: 'Révélation Design',
-      description: 'Découverte de ma passion pour l\'UI/UX et début de ma transition',
-      icon: Palette,
+      period: '2021 - 2024',
+      title: 'Baccalauréat Professionnel - Système Numérique Option RISC',
+      description: 'Le Bac Pro SN (Systèmes Numériques) option RISC (Réseaux Informatiques et Systèmes Communicants) est un diplôme de niveau Bac. Il forme aux métiers liés aux réseaux informatiques, à la maintenance des systèmes et à la communication des données. Cette formation permet d\'acquérir des compétences techniques solides en installation, configuration et gestion des réseaux, ainsi qu\'en maintenance des équipements informatiques.',
+      icon: GraduationCap,
       color: 'bg-purple-100 text-purple-600'
     },
     {
-      period: '2025',
-      title: 'Designer UI/UX',
-      description: 'Focus total sur le design d\'expériences utilisateur',
-      icon: Palette,
+      period: '2018 - 2021',
+      title: 'Diplôme National du Brevet',
+      icon: GraduationCap,
       color: 'bg-tan text-white'
     }
   ];

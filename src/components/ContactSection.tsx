@@ -131,13 +131,9 @@ export function ContactSection() {
   ];
 
   const projectTypes = [
-    'Design d\'application mobile',
-    'Site web & interface',
-    'Design system',
-    'UX Research & audit',
-    'Refonte d\'interface',
-    'Consultation design',
-    'Autre projet'
+    'Stages',
+    'Alternances',
+    'Toutes autres demandes',
   ];
 
   const getSubmitButtonContent = () => {
@@ -276,7 +272,7 @@ export function ContactSection() {
 
                 <div>
                   <label htmlFor="projectType" className="block text-sm font-medium text-brown mb-2">
-                    Type de projet *
+                    Type de demandes *
                   </label>
                   <select
                     id="projectType"
@@ -287,7 +283,7 @@ export function ContactSection() {
                     disabled={isSubmitting}
                     className="w-full px-3 py-2 border border-border rounded-soft focus:border-tan focus:ring-tan/20 bg-input-background disabled:opacity-50"
                   >
-                    <option value="">Sélectionnez un type de projet</option>
+                    <option value="">Sélectionnez votre demande</option>
                     {projectTypes.map((type) => (
                       <option key={type} value={type}>{type}</option>
                     ))}
@@ -304,7 +300,7 @@ export function ContactSection() {
                     value={formData.subject}
                     onChange={handleChange}
                     required
-                    placeholder="Le titre de votre projet"
+                    placeholder="Le titre de votre demande"
                     className="focus:border-tan focus:ring-tan/20"
                     disabled={isSubmitting}
                   />
@@ -312,7 +308,7 @@ export function ContactSection() {
 
                 <div>
                   <label htmlFor="message" className="block text-sm font-medium text-brown mb-2">
-                    Détails du projet *
+                    Détails de la demande *
                   </label>
                   <Textarea
                     id="message"
@@ -321,7 +317,7 @@ export function ContactSection() {
                     onChange={handleChange}
                     required
                     rows={6}
-                    placeholder="Décrivez votre projet : contexte, objectifs, timeline, budget approximatif..."
+                    placeholder="Ecrivez ici..."
                     className="focus:border-tan focus:ring-tan/20 resize-none"
                     disabled={isSubmitting}
                   />
@@ -418,8 +414,7 @@ export function ContactSection() {
               <div className="text-3xl mb-3">⚡</div>
               <h4 className="text-brown mb-2">Disponibilité actuelle</h4>
               <p className="text-brown/80 text-sm mb-4">
-                Ouvert aux projets freelance et missions longues. 
-                Particulièrement intéressé par les projets innovants et challenges UX.
+                Ouvert aux propositions de stages ou d'alternances. 
               </p>
               <div className="flex items-center justify-center space-x-2 text-brown/70">
                 <Coffee className="w-4 h-4" />

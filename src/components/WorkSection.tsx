@@ -5,7 +5,7 @@ import { ExternalLink, Github, Eye, Palette, Users, Smartphone, ArrowRight, Moni
 export function WorkSection() {
   const [activeCategory, setActiveCategory] = useState('Tous');
 
-  const categories = ['Tous', 'UI Design', 'UX Research', 'Mobile App', 'Web Design'];
+  const categories = ['Tous', 'UI Design', 'UX Research', 'Web Design'];
 
   const projects = [
     {
@@ -17,7 +17,6 @@ export function WorkSection() {
       gradient: 'bg-gradient-to-br from-blue-400 to-blue-600',
       icon: '📱',
       behance: '#',
-      figma: '#',
       status: 'Terminé',
       year: '2024',
       type: 'Projet personnel'
@@ -60,7 +59,6 @@ export function WorkSection() {
     switch (category) {
       case 'UI Design': return <Palette className="w-4 h-4" />;
       case 'UX Research': return <Users className="w-4 h-4" />;
-      case 'Mobile App': return <Smartphone className="w-4 h-4" />;
       case 'Web Design': return <Monitor className="w-4 h-4" />;
       default: return <Palette className="w-4 h-4" />;
     }

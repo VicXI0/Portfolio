@@ -1,7 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@300;400;500;600&display=swap");
 
-@custom-variant dark (&:is(.dark *));
-
 :root {
   --font-size: 16px;
   --font-family-main: "Inter", system-ui, sans-serif;
@@ -58,36 +56,10 @@
   --ring: #d4a574;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --color-card: var(--card);
-  --color-card-foreground: var(--card-foreground);
-  --color-primary: var(--primary);
-  --color-primary-foreground: var(--primary-foreground);
-  --color-secondary: var(--secondary);
-  --color-secondary-foreground: var(--secondary-foreground);
-  --color-muted: var(--muted);
-  --color-muted-foreground: var(--muted-foreground);
-  --color-accent: var(--accent);
-  --color-accent-foreground: var(--accent-foreground);
-  --color-border: var(--border);
-  --color-destructive: var(--destructive);
-  --color-destructive-foreground: var(--destructive-foreground);
-  --color-input: var(--input);
-  --color-input-background: var(--input-background);
-  --color-ring: var(--ring);
-  --color-cream: var(--color-cream);
-  --color-beige: var(--color-beige);
-  --color-tan: var(--color-tan);
-  --color-brown: var(--color-brown);
-  --color-dark-brown: var(--color-dark-brown);
-  --color-accent-custom: var(--color-accent);
-}
 
 @layer base {
   * {
-    @apply border-border;
+    border-color: var(--border);
   }
 
   html {
@@ -99,7 +71,8 @@
   }
 
   body {
-    @apply bg-background text-foreground;
+    background-color: var(--background);
+    color: var(--foreground);
     overflow-x: hidden;
     line-height: 1.6;
   }
