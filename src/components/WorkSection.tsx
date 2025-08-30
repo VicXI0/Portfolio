@@ -79,7 +79,7 @@ export function WorkSection() {
       <div className="container-wide">
         {/* En-tête */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-brown mb-6">Mes Projets Design</h2>
+          <h2 className="text-brown mb-6">Mes Projets</h2>
           <p className="text-large text-muted-foreground max-w-2xl mx-auto leading-relaxed">
           </p>
         </div>

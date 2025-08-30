@@ -193,7 +193,7 @@ export function AboutSection() {
             <div className="bg-card p-6 rounded-soft border border-border shadow-soft">
               <h4 className="text-brown mb-4">Mes outils</h4>
               <div className="grid grid-cols-2 gap-3">
-                {['Figma', 'Webflow', 'Canva', 'Cavalry', 'Notion'].map((tool) => (
+                {['Figma', 'Canva', 'Cavalry', 'Notion', 'HTML5', 'CSS3', 'PHP', 'MySQL'].map((tool) => (
                   <div key={tool} className="text-center p-2 bg-beige rounded text-sm font-medium text-brown">
                     {tool}
                   </div>

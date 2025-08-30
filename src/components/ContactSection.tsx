@@ -193,8 +193,7 @@ export function ContactSection() {
         <div className="text-center mb-16 animate-fade-in-up">
           <h2 className="text-brown mb-6">Créons ensemble</h2>
           <p className="text-large text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            Vous avez un projet design en tête ? Une interface à repenser ? 
-            Une expérience utilisateur à améliorer ? Discutons-en !
+            Mon profil vous intéresse ou une question en particulier ? Discutons-en !
           </p>
         </div>
 
