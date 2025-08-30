@@ -1,7 +1,7 @@
 
-  # Portfolio BTS SIO SDLAM
+  # Portfolio 
 
-  This is a code bundle for Portfolio BTS SIO SDLAM. The original project is available at https://www.figma.com/design/I7GDjJDGJa8Bv0Rn24Y1rK/Portfolio-BTS-SIO-SDLAM.
+  Ceci est le portfolio crée par PHANOR Myron
 
   ## Running the code
 
