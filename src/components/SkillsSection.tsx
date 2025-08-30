@@ -127,7 +127,8 @@ export function SkillsSection() {
                 <div className="mt-2 text-xs text-muted-foreground">
                   {skill.level >= 80 ? '🟢 Niveau avancé' : 
                    skill.level >= 65 ? '🟡 Bon niveau' : 
-                   '🟠 En développement'}
+                   skill.level >= 50 ? '🟠 Débutant' : 
+                   '🔴 En Développement'}
                 </div>
               </div>
             ))}
