@@ -35,7 +35,7 @@ export function AboutSection() {
     },
     {
       period: '2021 - 2024',
-      title: 'Baccalauréat Professionnel - Système Numérique Option RISC',
+      title: 'Baccalauréat Professionnel - Système Numérique Option RISC - Lycée Georges Brassens à Evry - Courcouronnes',
       description: 'Le Bac Pro SN (Systèmes Numériques) option RISC (Réseaux Informatiques et Systèmes Communicants) est un diplôme de niveau Bac. Il forme aux métiers liés aux réseaux informatiques, à la maintenance des systèmes et à la communication des données. Cette formation permet d\'acquérir des compétences techniques solides en installation, configuration et gestion des réseaux, ainsi qu\'en maintenance des équipements informatiques.',
       icon: GraduationCap,
       color: 'bg-purple-100 text-purple-600'
@@ -57,7 +57,7 @@ export function AboutSection() {
             <div className="space-y-6">
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                 Je m'appelle Myron, 
+                 Je m'appelle Myron, Actuellement étudiant en BTS SIO option SLAM, j'ai découvert une passion inattendue pour le design UI/UX.
                 </p>
                 <p>
                   Ce qui devait être un parcours purement technique s'est transformé en 

@@ -7,14 +7,14 @@ export function WorkSection() {
     {
       id: 1,
       title: 'Antrophia - Gestion de RH',
-      description: 'Design complet d\'une application mobile de gestion des ressources humaines avec un focus sur l\'expérience utilisateur.',
+      description: 'Antrophia est un site web de gestion des ressources humaines capable de simplifier les relations entre l\'employeur et le directeur des Ressources Humaines.',
       category: 'Projet d\'école',
       gradient: 'bg-gradient-to-br from-blue-400 to-blue-600',
       icon: <img src="../documents/Logo - Antrophia.png" alt="Antrophia Logo" className="w-16 h-16 object-contain" />,
       behance: '#',
       status: 'Terminé',
-      year: '2024',
-      type: 'Projet personnel',
+      year: '2025',
+      type: 'Projet Scolaire',
       tags: ['Site Web', 'Design'],
     },
   ];

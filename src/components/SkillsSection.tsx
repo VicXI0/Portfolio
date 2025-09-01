@@ -243,7 +243,7 @@ export function SkillsSection() {
             </div>
             <div className="flex items-center space-x-2 bg-card px-3 py-2 rounded-soft border border-border">
               <span>🎬</span>
-              <span className="text-sm text-brown">Youtube</span>
+              <span className="text-sm text-brown">Youtube / LinkedIn</span>
             </div>
           </div>
               </div>

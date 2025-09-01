@@ -74,18 +74,6 @@ export function HeroSection() {
               </p>
             </div>
 
-            {/* Tags compétences */}
-            <div className="flex flex-wrap gap-2">
-              {['UI Design', 'UX Research', 'Prototypage', 'Figma'].map((skill) => (
-                <span 
-                  key={skill}
-                  className="px-3 py-1 bg-secondary text-sm text-brown rounded-full hover:bg-tan hover:text-white transition-colors"
-                >
-                  {skill}
-                </span>
-              ))}
-            </div>
-
             {/* Boutons d'action */}
             <div className="flex flex-wrap items-center gap-4">
               <Button
