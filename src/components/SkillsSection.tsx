@@ -179,12 +179,75 @@ export function SkillsSection() {
         {/* Formation continue */}
         <div className="mt-12 text-center animate-fade-in-up">
           <div className="max-w-3xl mx-auto">
-            <h4 className="text-brown mb-6">Formation continue</h4>
+            <h4 className="text-brown mb-6">Veille Technologique</h4>
             <p className="text-muted-foreground leading-relaxed mb-8">
-              Le design évolue constamment. Je reste à jour avec les dernières tendances, 
-              outils et méthodologies à travers des cours en ligne, lectures spécialisées 
-              et participation à la communauté design.
+              La cybersécurité et le développement web évoluent constamment. Je reste à jour avec les dernières menaces, 
+              vulnérabilités, frameworks web et méthodologies de développement sécurisé à travers une veille active et continue.
             </p>
+            
+            <div className="text-left max-w-2xl mx-auto mb-8">
+              <p className="text-muted-foreground mb-6">
+          Voici quelques sujets que je suis régulièrement :
+              </p>
+              
+              <div className="space-y-4 mb-8">
+          <div className="flex items-start space-x-3">
+            <span className="text-lg">🔒</span>
+            <div>
+              <span className="font-semibold text-brown">Cybersécurité :</span>
+              <span className="text-muted-foreground"> nouvelles vulnérabilités, attaques émergentes, frameworks de sécurité, conformité RGPD et normes ISO.</span>
+            </div>
+          </div>
+          
+            <div className="flex items-start space-x-3">
+            <span className="text-lg">🌐</span>
+            <div>
+              <span className="font-semibold text-brown">Développement web :</span>
+              <span className="text-muted-foreground"> React, TypeScript, Node.js, frameworks modernes, architectures web, optimisation des performances.</span>
+            </div>
+            </div>
+          
+          <div className="flex items-start space-x-3">
+            <span className="text-lg">💻</span>
+            <div>
+              <span className="font-semibold text-brown">Développement web sécurisé :</span>
+              <span className="text-muted-foreground"> bonnes pratiques de codage, authentification, chiffrement, gestion des secrets.</span>
+            </div>
+          </div>
+          
+          <div className="flex items-start space-x-3">
+            <span className="text-lg">⚡</span>
+            <div>
+              <span className="font-semibold text-brown">Technologies web émergentes :</span>
+              <span className="text-muted-foreground"> frameworks JavaScript, Progressive Web Apps, serverless, performances web.</span>
+            </div>
+          </div>
+              </div>
+              
+              <div className="border-t border-border pt-6">
+          <p className="text-muted-foreground mb-4">
+            Je m'informe principalement via :
+          </p>
+          <div className="flex flex-wrap justify-center gap-4">
+            <div className="flex items-center space-x-2 bg-card px-3 py-2 rounded-soft border border-border">
+              <span>🔐</span>
+              <span className="text-sm text-brown">ANSSI / CERT-FR</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-card px-3 py-2 rounded-soft border border-border">
+              <span>🛡️</span>
+              <span className="text-sm text-brown">Korben</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-card px-3 py-2 rounded-soft border border-border">
+              <span>📚</span>
+              <span className="text-sm text-brown">CVE / NVD</span>
+            </div>
+            <div className="flex items-center space-x-2 bg-card px-3 py-2 rounded-soft border border-border">
+              <span>🎬</span>
+              <span className="text-sm text-brown">Youtube</span>
+            </div>
+          </div>
+              </div>
+            </div>
             
             {/* Certifications et formations récentes */}
             <div className="flex justify-center">

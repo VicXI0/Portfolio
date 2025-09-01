@@ -66,8 +66,7 @@ export function HeroSection() {
             {/* Description */}
             <div className="space-y-4 max-w-lg">
               <p className="text-large text-muted-foreground leading-relaxed">
-                Après mon parcours technique en BTS SIO, j'ai découvert ma véritable passion : 
-                créer des expériences utilisateur exceptionnelles et des interfaces qui font sens.
+                Actuellement en BTS SIO SLAM, je me passionne pour le design UI/UX et le développement web.
               </p>
               <p className="text-muted-foreground">
                 Je combine ma compréhension technique du développement avec ma nouvelle passion 
@@ -96,15 +95,6 @@ export function HeroSection() {
               >
                 Découvrir mes projets
                 <ArrowDown className="ml-2 w-4 h-4" />
-              </Button>
-              
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-brown text-brown hover:bg-brown hover:text-white px-8"
-              >
-                <Download className="mr-2 w-4 h-4" />
-                Mon CV
               </Button>
             </div>
 
@@ -170,8 +160,8 @@ export function HeroSection() {
               <div className="absolute -top-6 -left-6 bg-card border border-border p-4 rounded-soft shadow-medium hover-lift">
                 <div className="text-center">
                   <div className="text-2xl mb-2"></div>
-                  <div className="text-sm font-medium text-brown">Transition</div>
-                  <div className="text-xs text-muted-foreground">Carrière</div>
+                  <div className="text-sm font-medium text-brown">Développement</div>
+                  <div className="text-xs text-muted-foreground">Web</div>
                 </div>
               </div>
             </div>

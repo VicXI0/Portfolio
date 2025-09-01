@@ -20,20 +20,17 @@ export function Footer() {
     {
       icon: Github,
       href: 'https://github.com/VicXI0',
-      label: 'GitHub',
-      description: 'Mes projets'
+      label: 'GitHub'
     },
     {
       icon: Linkedin,
       href: 'https://www.linkedin.com/in/myron-phanor-75b183282',
-      label: 'LinkedIn',
-      description: 'Mon profil LinkedIn'
+      label: 'LinkedIn'
     },
     {
       icon: ExternalLink,
       href: 'https://www.behance.net/myron-phanor',
       label: 'Behance',
-      description: 'Mes designs'
     }
   ];
 
@@ -133,7 +130,6 @@ export function Footer() {
                   </div>
                   <div>
                     <div className="font-medium">{social.label}</div>
-                    <div className="text-xs text-cream/50">{social.description}</div>
                   </div>
                 </a>
               ))}

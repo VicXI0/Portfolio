@@ -28,8 +28,8 @@ export function AboutSection() {
   const journey = [
     {
       period: '2024-Aujourd\'hui',
-      title: 'BTS SIO Option SLAM',
-      description: ' "Le BTS SIO propose deux options :\n\n      Option SISR\n      L'option Solutions d'infrastructure, systèmes et réseaux prépare des spécialistes en réseaux et équipements informatiques (installation, maintenance, sécurité). En obtenant un BTS SIO option SISR, vous serez en mesure de gérer et administrer le réseau d'une organisation tout en garantissant sa sécurité et sa maintenance.\n\n      Les titulaires du BTS SIO option SISR peuvent exercer les métiers suivants :\n      Administrateur systèmes et réseaux\n      Informaticien support et déploiement\n      Pilote d'exploitation\n      Support systèmes et réseaux\n\n      Option SLAM\n      L'option Solutions logicielles et applications métiers forme des spécialistes des logiciels (rédaction d'un cahier des charges, formulation des besoins et spécifications, développement, intégration au sein de la société).\n\n      Les techniciens supérieurs en informatique option SLAM, sont préparés aux métiers de :\n      Développeur d'applications informatiques\n      Développeur informatique\n      Analyste d'applications ou d'études ',
+      title: 'BTS SIO Option SLAM - Lycée Parc de Vilgénis à Massy',
+      description: 'Le BTS SIO (Services Informatiques aux Organisations) est un diplôme de niveau Bac+2. L’option SLAM (Solutions Logicielles et Applications Métiers) est orientée vers le développement d’applications web, mobile et desktop, ainsi que la gestion de bases de données. Il permet d’acquérir une solide base en programmation et en conception de solutions logicielles. ',
       icon: Code,
       color: 'bg-blue-100 text-blue-600'
     },
@@ -39,12 +39,6 @@ export function AboutSection() {
       description: 'Le Bac Pro SN (Systèmes Numériques) option RISC (Réseaux Informatiques et Systèmes Communicants) est un diplôme de niveau Bac. Il forme aux métiers liés aux réseaux informatiques, à la maintenance des systèmes et à la communication des données. Cette formation permet d\'acquérir des compétences techniques solides en installation, configuration et gestion des réseaux, ainsi qu\'en maintenance des équipements informatiques.',
       icon: GraduationCap,
       color: 'bg-purple-100 text-purple-600'
-    },
-    {
-      period: '2018 - 2021',
-      title: 'Diplôme National du Brevet',
-      icon: GraduationCap,
-      color: 'bg-tan text-white'
     }
   ];
 
@@ -53,11 +47,7 @@ export function AboutSection() {
       <div className="container-wide">
         {/* En-tête */}
         <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-brown mb-6">Mon histoire</h2>
-          <p className="text-large text-muted-foreground max-w-2xl mx-auto leading-relaxed">
-            De développeur à designer : l'histoire d'une reconversion passionnée 
-            vers la création d'expériences utilisateur mémorables.
-          </p>
+          <h2 className="text-brown mb-6">Qui suis-je ? Faisons Connaissance !</h2>
         </div>
 
         {/* Contenu principal */}
@@ -65,11 +55,9 @@ export function AboutSection() {
           {/* Contenu gauche */}
           <div className="lg:col-span-7 space-y-8 animate-fade-in-up">
             <div className="space-y-6">
-              <h3 className="text-brown">Ma transition vers le design</h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  Actuellement en BTS SIO Option SLAM, je voulais être Développeur Web Full-Stack, mais lorsque j'ai eu l'occasion de créer des projets de sites web, j'ai plus pensé comme un Designer UI / UX au lieu d'un Développeur.
-                  Je faisais attention aux détails, à l'expérience utilisateur et à l'esthétique globale, ce qui m'a fait réaliser que ma véritable passion résidait dans le design.
+                 Je m'appelle Myron, 
                 </p>
                 <p>
                   Ce qui devait être un parcours purement technique s'est transformé en 
@@ -112,7 +100,7 @@ export function AboutSection() {
 
             {/* Mes valeurs */}
             <div>
-              <h4 className="text-brown mb-6">Ce qui guide mon approche design</h4>
+              <h4 className="text-brown mb-6">Ce qui guide mon approche</h4>
               <div className="grid md:grid-cols-2 gap-4">
                 {values.map((value, index) => (
                   <div 
@@ -139,61 +127,16 @@ export function AboutSection() {
                 Collaborons ensemble
                 <ArrowRight className="ml-2 w-4 h-4" />
               </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                className="border-brown text-brown hover:bg-brown hover:text-white px-8"
-              >
-                <Download className="mr-2 w-4 h-4" />
-                Mon portfolio complet
-              </Button>
             </div>
           </div>
 
           {/* Contenu droite */}
-          <div className="lg:col-span-5 space-y-8 animate-scale-in">
-            {/* Élément visuel abstrait */}
-            <div className="relative">
-              <div className="aspect-square bg-gradient-warm rounded-soft overflow-hidden shadow-warm flex items-center justify-center">
-                <div className="text-center">
-                  <div className="text-6xl mb-4">⚡</div>
-                  <h4 className="text-brown font-semibold">Design Thinking</h4>
-                  <p className="text-brown/70 text-sm">Ma méthodologie</p>
-                </div>
-              </div>
-              <div className="absolute -bottom-4 -right-4 bg-tan text-white p-3 rounded-soft shadow-medium">
-                <span className="font-mono text-sm">Design First</span>
-              </div>
-            </div>
-
-            {/* Informations personnelles */}
-            <div className="bg-card p-6 rounded-soft border border-border shadow-soft">
-              <h4 className="text-brown mb-4">En résumé</h4>
-              <div className="space-y-4">
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Orientation</span>
-                  <span className="text-sm font-medium text-brown">UI/UX Designer</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Background</span>
-                  <span className="text-sm font-medium text-brown">Développement</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Localisation</span>
-                  <span className="text-sm font-medium text-brown">Paris, France</span>
-                </div>
-                <div className="flex justify-between items-center">
-                  <span className="text-sm text-muted-foreground">Disponibilité</span>
-                  <span className="text-sm font-medium text-green-600">Alternance/Stage</span>
-                </div>
-              </div>
-            </div>
-
+          <div className="lg:col-span-5 space-y-6 animate-fade-in-up">
             {/* Outils favoris */}
             <div className="bg-card p-6 rounded-soft border border-border shadow-soft">
               <h4 className="text-brown mb-4">Mes outils</h4>
               <div className="grid grid-cols-2 gap-3">
-                {['Figma', 'Canva', 'Cavalry', 'Notion', 'HTML5', 'CSS3', 'PHP', 'MySQL'].map((tool) => (
+                {['Figma', 'Canva', 'Cavalry', 'Notion', 'HTML5', 'CSS3','JavaScript', 'PHP', 'MySQL'].map((tool) => (
                   <div key={tool} className="text-center p-2 bg-beige rounded text-sm font-medium text-brown">
                     {tool}
                   </div>

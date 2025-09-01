@@ -3,66 +3,21 @@ import { Button } from './ui/button';
 import { ExternalLink, Github, Eye, Palette, Users, Smartphone, ArrowRight, Monitor } from 'lucide-react';
 
 export function WorkSection() {
-  const [activeCategory, setActiveCategory] = useState('Tous');
-
-  const categories = ['Tous', 'UI Design', 'UX Research', 'Web Design'];
-
   const projects = [
     {
       id: 1,
       title: 'Antrophia - Gestion de RH',
       description: 'Design complet d\'une application mobile de gestion des ressources humaines avec un focus sur l\'expérience utilisateur.',
       category: 'Projet d\'école',
-      tags: ['UI Design', 'Mobile First', 'E-commerce'],
       gradient: 'bg-gradient-to-br from-blue-400 to-blue-600',
-      icon: '📱',
+      icon: <img src="../documents/Logo - Antrophia.png" alt="Antrophia Logo" className="w-16 h-16 object-contain" />,
       behance: '#',
       status: 'Terminé',
       year: '2024',
-      type: 'Projet personnel'
-    },
-    {
-      id: 2,
-      title: 'Dashboard Analytics',
-      description: 'Interface de tableau de bord pour visualiser des données complexes de manière intuitive et actionnable.',
-      category: 'Web Design',
-      tags: ['Dashboard', 'Data Viz', 'B2B'],
-      gradient: 'bg-gradient-to-br from-purple-400 to-purple-600',
-      icon: '📊',
-      behance: '#',
-      figma: '#',
-      status: 'En cours',
-      year: '2024',
-      type: 'Étude de cas'
-    },
-    {
-      id: 3,
-      title: 'Recherche UX - App Fitness',
-      description: 'Étude utilisateur complète pour améliorer l\'engagement dans une application de fitness.',
-      category: 'UX Research',
-      tags: ['User Research', 'Interviews', 'Testing'],
-      gradient: 'bg-gradient-to-br from-green-400 to-green-600',
-      icon: '🏃',
-      behance: null,
-      figma: '#',
-      status: 'Terminé',
-      year: '2024',
-      type: 'Projet d\'école'
+      type: 'Projet personnel',
+      tags: ['Site Web', 'Design'],
     },
   ];
-
-  const filteredProjects = activeCategory === 'Tous' 
-    ? projects 
-    : projects.filter(project => project.category === activeCategory);
-
-  const getCategoryIcon = (category: string) => {
-    switch (category) {
-      case 'UI Design': return <Palette className="w-4 h-4" />;
-      case 'UX Research': return <Users className="w-4 h-4" />;
-      case 'Web Design': return <Monitor className="w-4 h-4" />;
-      default: return <Palette className="w-4 h-4" />;
-    }
-  };
 
   const getTypeColor = (type: string) => {
     switch (type) {
@@ -84,29 +39,9 @@ export function WorkSection() {
           </p>
         </div>
 
-        {/* Filtres */}
-        <div className="flex flex-wrap justify-center gap-3 mb-12 animate-fade-in-up">
-          {categories.map((category) => (
-            <Button
-              key={category}
-              variant={activeCategory === category ? "default" : "outline"}
-              size="sm"
-              onClick={() => setActiveCategory(category)}
-              className={
-                activeCategory === category
-                  ? "bg-brown hover:bg-tan text-white"
-                  : "border-brown text-brown hover:bg-brown hover:text-white"
-              }
-            >
-              {getCategoryIcon(category)}
-              <span className="ml-2">{category}</span>
-            </Button>
-          ))}
-        </div>
-
         {/* Grille de projets */}
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-          {filteredProjects.map((project, index) => (
+          {projects.map((project, index) => (
             <div
               key={project.id}
               className="group bg-card rounded-soft border border-border overflow-hidden shadow-soft hover:shadow-warm transition-all duration-300 hover-lift animate-fade-in-up"
@@ -119,19 +54,6 @@ export function WorkSection() {
                   
                   {/* Overlay avec actions */}
                   <div className="absolute inset-0 bg-brown/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-3">
-                    {project.figma && (
-                      <Button
-                        size="sm"
-                        variant="secondary"
-                        className="bg-white text-brown hover:bg-beige"
-                        asChild
-                      >
-                        <a href={project.figma} target="_blank" rel="noopener noreferrer">
-                          <Eye className="w-4 h-4 mr-2" />
-                          Figma
-                        </a>
-                      </Button>
-                    )}
                     {project.behance && (
                       <Button
                         size="sm"
@@ -235,10 +157,6 @@ export function WorkSection() {
                 className="bg-brown hover:bg-tan text-white px-8 hover-lift"
                 asChild
               >
-                <a href="#" target="_blank" rel="noopener noreferrer">
-                  <Palette className="mr-2 w-4 h-4" />
-                  Portfolio complet sur Behance
-                </a>
               </Button>
               <Button
                 variant="outline"
