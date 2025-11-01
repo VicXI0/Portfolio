@@ -9,21 +9,21 @@ export function SkillsSection() {
       icon: <Palette className="w-5 h-5" />,
       description: 'Mes compétences en design d\'interface utilisateur et création visuelle.',
       skills: [
-        { name: 'Figma', level: 65, description: 'Mon outil principal de design', color: 'bg-purple-500' },
-        { name: 'Design Systems', level: 75, description: 'Création de systèmes cohérents', color: 'bg-blue-500' },
-        { name: 'Prototypage', level: 80, description: 'Maquettes interactives', color: 'bg-green-500' },
-        { name: 'Typographie', level: 70, description: 'Hiérarchie et lisibilité', color: 'bg-orange-500' },
-        { name: 'Théorie couleurs', level: 75, description: 'Palettes et harmonies', color: 'bg-pink-500' },
-        { name: 'Iconographie', level: 65, description: 'Création d\'icônes cohérentes', color: 'bg-indigo-500' }
+        { name: 'Figma', level: 65, description: 'Mon outil principal de design' },
+        { name: 'Design Systems', level: 75, description: 'Création de systèmes cohérents' },
+        { name: 'Prototypage', level: 80, description: 'Maquettes interactives' },
+        { name: 'Typographie', level: 70, description: 'Hiérarchie et lisibilité' },
+        { name: 'Théorie couleurs', level: 75, description: 'Palettes et harmonies' },
+        { name: 'Iconographie', level: 65, description: 'Création d\'icônes cohérentes' }
       ]
     },
     'UX Research': {
       icon: <Users className="w-5 h-5" />,
       description: 'Mes compétences en recherche utilisateur et méthodologie UX.',
       skills: [
-        { name: 'User Interviews', level: 70, description: 'Entretiens utilisateur qualitatifs', color: 'bg-cyan-500' },
-        { name: 'Personas', level: 75, description: 'Création de profils utilisateur', color: 'bg-teal-500' },
-        { name: 'User Journey', level: 80, description: 'Cartographie des parcours', color: 'bg-emerald-500' },
+        { name: 'User Interviews', level: 70, description: 'Entretiens utilisateur qualitatifs' },
+        { name: 'Personas', level: 75, description: 'Création de profils utilisateur' },
+        { name: 'User Journey', level: 80, description: 'Cartographie des parcours' },
         { name: 'Wireframing', level: 85, description: 'Maquettes fonctionnelles', color: 'bg-gray-600' },
         { name: 'A/B Testing', level: 60, description: 'Tests comparatifs', color: 'bg-red-500' },
         { name: 'Analytics', level: 55, description: 'Analyse comportementale', color: 'bg-yellow-500' }
@@ -33,7 +33,7 @@ export function SkillsSection() {
       icon: <Monitor className="w-5 h-5" />,
       description: 'Mes outils de design et compétences techniques complémentaires.',
       skills: [
-        { name: 'Figma Advanced', level: 70, description: 'Composants, variants, auto-layout', color: 'bg-purple-600' },
+        { name: 'Figma Advanced', level: 70, description: 'Composants, variants, auto-layout'},
         { name: 'Canva', level: 40, description: 'Application de design graphique et de création de logos', color: 'bg-green-600' },
         { name: 'Miro/FigJam', level: 75, description: 'Collaboration et idéation', color: 'bg-orange-600' },
         { name: 'HTML/CSS', level: 80, description: 'Compréhension technique', color: 'bg-indigo-600' },
@@ -43,12 +43,12 @@ export function SkillsSection() {
       icon: <Target className="w-5 h-5" />,
       description: 'Mes qualités humaines et compétences transversales en design.',
       skills: [
-        { name: 'Empathie', level: 90, description: 'Comprendre les besoins utilisateur', color: 'bg-rose-500' },
-        { name: 'Créativité', level: 85, description: 'Solutions innovantes et originales', color: 'bg-violet-500' },
-        { name: 'Communication', level: 80, description: 'Présentation et argumentation', color: 'bg-blue-500' },
-        { name: 'Collaboration', level: 85, description: 'Travail en équipe multidisciplinaire', color: 'bg-green-500' },
-        { name: 'Pensée critique', level: 75, description: 'Analyse et résolution de problèmes', color: 'bg-amber-500' },
-        { name: 'Adaptabilité', level: 90, description: 'Flexibilité face aux changements', color: 'bg-teal-500' }
+        { name: 'Empathie', level: 90, description: 'Comprendre les besoins utilisateur' },
+        { name: 'Créativité', level: 85, description: 'Solutions innovantes et originales' },
+        { name: 'Communication', level: 80, description: 'Présentation et argumentation' },
+        { name: 'Collaboration', level: 85, description: 'Travail en équipe multidisciplinaire' },
+        { name: 'Pensée critique', level: 75, description: 'Analyse et résolution de problèmes' },
+        { name: 'Adaptabilité', level: 90, description: 'Flexibilité face aux changements' }
       ]
     }
   };
