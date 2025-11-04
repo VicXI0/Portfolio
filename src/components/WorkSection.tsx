@@ -11,7 +11,7 @@ export function WorkSection() {
       category: 'Projet d\'école',
       gradient: 'bg-gradient-to-br from-blue-400 to-blue-600',
       icon: <img src="../documents/Logo - Antrophia.png" alt="Antrophia Logo" className="w-16 h-16 object-contain" />,
-      behance: '#',
+      lien: 'https://antrophia.infinityfreeapp.com',
       status: 'Terminé',
       year: '2025',
       type: 'Projet Scolaire',
@@ -54,15 +54,15 @@ export function WorkSection() {
                   
                   {/* Overlay avec actions */}
                   <div className="absolute inset-0 bg-brown/80 opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-center justify-center space-x-3">
-                    {project.behance && (
+                    {project.lien && (
                       <Button
                         size="sm"
                         className="bg-tan hover:bg-brown text-white"
                         asChild
                       >
-                        <a href={project.behance} target="_blank" rel="noopener noreferrer">
+                        <a href={project.lien} target="_blank" rel="noopener noreferrer">
                           <ExternalLink className="w-4 h-4 mr-2" />
-                          Behance
+                          Allez voir
                         </a>
                       </Button>
                     )}
