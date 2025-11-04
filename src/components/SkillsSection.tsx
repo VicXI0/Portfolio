@@ -24,9 +24,9 @@ export function SkillsSection() {
         { name: 'User Interviews', level: 70, description: 'Entretiens utilisateur qualitatifs' },
         { name: 'Personas', level: 75, description: 'Création de profils utilisateur' },
         { name: 'User Journey', level: 80, description: 'Cartographie des parcours' },
-        { name: 'Wireframing', level: 85, description: 'Maquettes fonctionnelles', color: 'bg-gray-600' },
-        { name: 'A/B Testing', level: 60, description: 'Tests comparatifs', color: 'bg-red-500' },
-        { name: 'Analytics', level: 55, description: 'Analyse comportementale', color: 'bg-yellow-500' }
+        { name: 'Wireframing', level: 85, description: 'Maquettes fonctionnelles'},
+        { name: 'A/B Testing', level: 60, description: 'Tests comparatifs'},
+        { name: 'Analytics', level: 55, description: 'Analyse comportementale'}
       ]
     },
     'Outils & Tech': {
@@ -34,7 +34,7 @@ export function SkillsSection() {
       description: 'Mes outils de design et compétences techniques complémentaires.',
       skills: [
         { name: 'Figma Advanced', level: 70, description: 'Composants, variants, auto-layout'},
-        { name: 'Canva', level: 40, description: 'Application de design graphique et de création de logos', color: 'bg-green-600' },
+        { name: 'Canva', level: 60, description: 'Application de design graphique et de création de logos', color: 'bg-green-600' },
         { name: 'Miro/FigJam', level: 75, description: 'Collaboration et idéation', color: 'bg-orange-600' },
         { name: 'HTML/CSS', level: 80, description: 'Compréhension technique', color: 'bg-indigo-600' },
       ]
@@ -110,17 +110,6 @@ export function SkillsSection() {
                   <span className="text-sm font-mono text-brown bg-beige px-2 py-1 rounded">
                     {skill.level}%
                   </span>
-                </div>
-
-                {/* Barre de progression */}
-                <div className="w-full bg-secondary rounded-full h-2 overflow-hidden">
-                  <div
-                    className={`h-full rounded-full transition-all duration-1000 ease-out ${skill.color}`}
-                    style={{ 
-                      width: `${skill.level}%`,
-                      animationDelay: `${index * 100 + 500}ms`
-                    }}
-                  />
                 </div>
 
                 {/* Niveau d'expertise */}
@@ -211,7 +200,7 @@ export function SkillsSection() {
             <span className="text-lg">💻</span>
             <div>
               <span className="font-semibold text-brown">Développement web sécurisé :</span>
-              <span className="text-muted-foreground"> bonnes pratiques de codage, authentification, chiffrement, gestion des secrets.</span>
+              <span className="text-muted-foreground"> bonnes pratiques de codage, authentification, chiffrement.</span>
             </div>
           </div>
           
@@ -219,11 +208,12 @@ export function SkillsSection() {
             <span className="text-lg">⚡</span>
             <div>
               <span className="font-semibold text-brown">Technologies web émergentes :</span>
-              <span className="text-muted-foreground"> frameworks JavaScript, Progressive Web Apps, serverless, performances web.</span>
+              <span className="text-muted-foreground"> frameworks JavaScript, performances web.</span>
             </div>
           </div>
               </div>
               
+              {/* Ligne de séparation conservée */}
               <div className="border-t border-border pt-6">
           <p className="text-muted-foreground mb-4">
             Je m'informe principalement via :
